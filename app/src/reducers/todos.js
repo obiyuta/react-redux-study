@@ -60,14 +60,14 @@ export default function todos(state = initialState, action) {
     case MOVE_UP_TODO: {
       const index = state.indexOf(action.payload)
       return index > 0
-        ? Object.assign([], swap(state, index, index - 1))
+        ? [ ...swap(state, index, index - 1) ]
         : state
     }
 
     case MOVE_DOWN_TODO: {
       const index = state.indexOf(action.payload)
       return index + 1 < state.length
-        ? Object.assign([], swap(state, index, index + 1))
+        ? [ ...swap(state, index, index + 1) ]
         : state
     }
 
