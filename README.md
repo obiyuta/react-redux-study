@@ -1,4 +1,4 @@
-# react-redus-study
+# react-redux-study
 
 ![screen](./docs/images/screen-preview.png)
 
