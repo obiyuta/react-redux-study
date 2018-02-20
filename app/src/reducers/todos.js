@@ -18,7 +18,8 @@ const initialState = [
   }
 ]
 
-const swap = (array, x, y) => {
+const swap = (state, x, y) => {
+  const array = [ ...state ]
   const t = array[x]
   array[x] = array[y]
   array[y] = t
