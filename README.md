@@ -12,7 +12,7 @@ __Recommended__
 
 * [Redux DevTools Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 
-# Installations
+# Usage
 
 ```
 ./bin/setup
