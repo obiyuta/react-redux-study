@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  nginx:
+    build: ./containers/nginx
+    image: react_nginx
+    container_name: react_nginx
+    ports:
+      - "8888:80"
+    volumes:
+      - react_app_sync:/www:nocopy
+    depends_on:
+      - webpack
+  webpack:
+    build: ./containers/webpack
+    image: react_webpack
+    container_name: react_webpack
+    tty: true
+    stdin_open: true
+    volumes:
+      - react_app_sync:/app:nocopy
+volumes:
+  react_app_sync:
+    external: true

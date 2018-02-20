@@ -1,0 +1,27 @@
+#!/bin/bash
+
+main() {
+  check_requirements
+  docker-sync start
+  npm_install
+  docker-compose up -d
+}
+
+check_requirements() {
+  check_command_exists() {
+    if ! eval "command -v ${1} > /dev/null"; then
+      echo "You must install ${1} first."
+      exit 1
+    fi
+  }
+
+  check_command_exists 'docker'
+  check_command_exists 'docker-compose'
+  check_command_exists 'docker-sync'
+}
+
+npm_install() {
+  ./bin/run webpack npm install
+}
+
+main

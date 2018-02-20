@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest",
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "globals": {
+    "fetch": true,
+    "Settings": true
+  },
+  "env": {
+    "browser": true,
+    "es6":  true,
+    "jest": true
+  },
+  "rules": {
+    "generator-star-spacing":             [0],
+    "space-before-function-paren":        [0],
+    "react/jsx-closing-bracket-location": [2],
+    "react/jsx-equals-spacing":           [2],
+    "react/jsx-handler-names":            [2],
+    "react/jsx-indent":                   [2, 2],
+    "react/jsx-indent-props":             [2, 2],
+    "react/jsx-key":                      [2],
+    "react/jsx-max-props-per-line":       [0],
+    "react/jsx-no-bind":                  [2, { "ignoreRefs": true }],
+    "react/jsx-sort-props":               [2],
+    "react/no-multi-comp":                [2],
+    "react/no-set-state":                 [0],
+    "react/prefer-stateless-function":    [2],
+    "react/sort-prop-types":              [2]
+  }
+}

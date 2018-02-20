@@ -1,0 +1,8 @@
+version: "2"
+
+options:
+  verbose: true
+syncs:
+  react_app_sync:
+    src: './app'
+    sync_strategy: 'unison'
