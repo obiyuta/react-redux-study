@@ -17,3 +17,5 @@ __Recommended__
 ```
 ./bin/setup
 ```
+
+Then, you can access [http://localhost:8888/](http://localhost:8888/).
