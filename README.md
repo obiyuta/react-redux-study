@@ -1,6 +1,6 @@
 # react-redux-study
 
-![screen](./docs/images/screen-preview.png)
+![screen](./docs/images/screen-preview.jpg)
 
 # Requirements
 
